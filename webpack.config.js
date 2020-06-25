@@ -2,8 +2,7 @@ const webpack = require('webpack'),
 	path = require('path'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
 	workboxPlugin = require('workbox-webpack-plugin'),
-	WebpackPWAManifest = require('webpack-pwa-manifest'),
-	FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+	WebpackPWAManifest = require('webpack-pwa-manifest');
 
 module.exports = {
 	entry: {
@@ -31,6 +30,7 @@ module.exports = {
 			},
 			{
 				test: /\.html$/,
+				include: [/src/],
 				use: [
 					{
 						loader: 'html-loader',
@@ -60,23 +60,6 @@ module.exports = {
 			$: 'jquery',
 			jQuery: 'jquery',
 		}),
-		new WebpackPWAManifest({
-			gcm_sender_id: '47967080645',
-			name: 'Premier League App',
-			short_name: 'PL App',
-			lang: 'en-US',
-			start_url: '/',
-			display: 'standalone',
-			theme_color: '#38003C',
-			background_color: '#FFF',
-			icons: [
-				{
-					src: path.resolve('./src/assets/icon/icon.png'),
-					size: [96, 128, 192, 256, 384, 512],
-				},
-			],
-		}),
-		new FaviconsWebpackPlugin('./src/assets/icon/icon.png'),
 		new workboxPlugin.InjectManifest({
 			swSrc: './src/sw.js',
 			swDest: 'sw.js',
