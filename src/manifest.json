@@ -3,7 +3,7 @@
 	"name": "Premier League App",
 	"short_name": "PL App",
 	"lang": "en-US",
-	"start_url": "./",
+	"start_url": "../index.html",
 	"display": "standalone",
 	"theme_color": "#38003C",
 	"background_color": "#FFF",
