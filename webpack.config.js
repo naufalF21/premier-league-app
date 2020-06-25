@@ -1,8 +1,7 @@
 const webpack = require('webpack'),
 	path = require('path'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
-	workboxPlugin = require('workbox-webpack-plugin'),
-	WebpackPWAManifest = require('webpack-pwa-manifest');
+	workboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
 	entry: {
