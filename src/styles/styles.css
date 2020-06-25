@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.bg {
+	background-image: url('../assets/img/pl-bg.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+.progress {
+	margin: .5rem 0 100vh 0;
+}
+
+.standings {
+	background-color: #E90052
+}
+
+.profile,
+.clubs {
+	background-color: #00FF85;
+}
+
+.matches {
+	background-color: #04F5FF;
+}
+
+.saved {
+	background-color: #EAFF02;
+}
+
+.profile,
+.saved,
+.matches,
+.clubs,
+.standings {
+	padding-top: 2.7rem;
+	padding-bottom: 1.6rem;
+}
+
+.profile,
+.matches,
+.clubs,
+.standings {
+	display: none;
+}
+
+.profile .card,
+.saved .card,
+.matches .card,
+.clubs .card,
+.standings .card {
+	background-color: #FFF;
+	color: #38003C;
+	margin: 0;
+	padding-top: 1rem;
+}
+
+.profile .card-title,
+.saved .card-title,
+.matches .card-title,
+.clubs .card-title,
+.standings .card-title {
+	font-weight: bold;
+}
+
+nav {
+	background-color: #38003C;
+}
+
+nav .brand-logo {
+	font-family: 'Righteous', cursive;
+}
+
+nav .topnav,
+nav .sidenav {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.home .blur {
+	backdrop-filter: blur(8px);
+	height: 100vh;
+	position: fixed;
+	background: rgba(56, 0, 60, .2);
+}
+
+.home .blur-side {
+	margin-left: 30%;
+}
+
+.home .blur-side .quotes {
+  width: 70%;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, .5);
+  font-family: 'Sriracha', cursive;
+}
+
+.home .blur-side .quotes .text {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.home .blur-side .btn {
+  background-color: #E90052;
+  padding: 0.4rem 1.8rem;
+  height: auto;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #FFF;
+  font-size: .8rem;
+}
+
+.home .blur-side .btn i {
+	vertical-align: middle;
+	font-size: 1.6rem;
+}
+
+#clubs tr img,
+#standings tr img {
+	width: 40px;
+	margin-right: 1rem;
+}
+
+#clubs tr a {
+	color: #38003C;
+}
+
+.dropdown-trigger {
+	width: 140px;
+	color: #38003C;
+}
+
+.dropdown-trigger,
+.dropdown-trigger:focus {
+	background: transparent;
+}
+
+.dropdown-trigger:hover {
+	background-color: #04F5FF;
+}
+
+.dropdown-trigger .material-icons {
+	vertical-align: middle;
+	margin-left: .1rem;
+}
+
+.saved .card-image img,
+.profile .card-image img {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.saved #saved-clubs .card {
+	margin: 2rem;
+}
+
+.saved #saved-clubs .card-content {
+	color: #FFF;
+	background-color: #38003C;
+}
+
+.saved #saved-clubs .card hr {
+	margin-block-end: 0;
+}
+
+.page-footer {
+	padding-top: 0;
+}
+
+@media only screen and (max-device-width: 768px) {
+	.full {
+		height: 100vh;
+	}
+
+	.home .blur-side {
+   	margin-left: 10%;
+   	margin-bottom: 20%;
+  	}
+
+ 	.home .blur-side .quotes {
+   	width: 90%;
+  	}
+
+	.home .blur-side .btn i {
+		vertical-align: middle;
+		font-size: 1.6rem;
+	}
+
+	.standings table .club-name {
+		padding: 2.1rem 0;
+	}
+
+	.matches,
+	.clubs {
+		height: 100vh;
+	}
+
+	.clubs table .club-name {
+		padding: 1.9rem 0
+	}
+
+	.matches table tbody .center {
+		padding: 1.6rem 0;
+	}
+
+	.saved #saved-clubs .card {
+		margin: 2rem 1rem;
+	}
+}
