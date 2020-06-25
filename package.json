@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"description": "",
-	"homepage": "https://naufalf21.github.io/premier-league-app/index.html",
+	"homepage": "https://naufalf21.github.io/premier-league-app/",
 	"scripts": {
 		"build": "webpack --mode production",
 		"start-dev": "webpack-dev-server --open --mode development",
