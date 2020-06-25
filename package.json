@@ -33,10 +33,7 @@
 		"to-string-loader": "^1.1.6",
 		"webpack": "^4.43.0",
 		"webpack-cli": "^3.3.12",
-<<<<<<< HEAD
 		"webpack-dev-server": "^3.11.0"
-=======
 		"webpack-dev-server": "^3.11.0",
->>>>>>> 5c2842125212927332ec91d57aebe012a3a068b8
 	}
 }
