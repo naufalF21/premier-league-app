@@ -62,7 +62,7 @@ module.exports = {
 		}),
 		new workboxPlugin.InjectManifest({
 			swSrc: './src/src-sw.js',
-			swDest: './src/sw.js',
+			swDest: './sw.js',
 		}),
 	],
 };

@@ -1,6 +1,6 @@
 export const registerServiceWorker = () => {
 	return navigator.serviceWorker
-		.register('./src/sw.js')
+		.register('./sw.js')
 		.then((registration) => {
 			console.log('SW registered: ', registration);
 		})
